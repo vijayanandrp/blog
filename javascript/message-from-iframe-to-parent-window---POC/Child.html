@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        function keep_alive() {
+            http_request = new XMLHttpRequest();
+            http_request.open('GET', "Child.html");
+            http_request.send(null);
+            parent.postMessage("Refreshing Page in child frame", "*");
+        };
+
+        function keep_push() {
+            parent.postMessage("Timeout Message", "*");
+        };
+
+        setInterval(keep_alive, 1000);
+        setTimeout(keep_push, 5000)
+
+        parent.postMessage("child frame (Initial Page Load)", "*");
+    </script>
+    <h1>HELLO WORLD !!!</h1>
+
+</body>
+</html>

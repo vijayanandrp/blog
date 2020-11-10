@@ -1,0 +1,4 @@
+Make the document in correct folder 
+
+
+make sure sudo chown www-data:www-data to all folders except /etc/

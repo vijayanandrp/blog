@@ -1,0 +1,365 @@
+02/22/2016 10:59:24 PM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/22/2016 10:59:24 PM - Main Handler - INFO - Client IP - 127.0.0.1
+02/22/2016 10:59:24 PM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/65d8784bcfe049e1b8b7099904dc5722/a.pdf 
+02/22/2016 10:59:24 PM - Storage - convertor.py  - INFO - Random String is 65d8784bcfe049e1b8b7099904dc5722 
+02/22/2016 10:59:24 PM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a.pdf  
+ /var/www/html/pdf-to-pptx/data/download/65d8784bcfe049e1b8b7099904dc5722/a.pdf 
+
+02/22/2016 10:59:24 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a.pdf 
+ /var/www/html/pdf-to-pptx/data/download/65d8784bcfe049e1b8b7099904dc5722/a.pptx
+02/22/2016 10:59:24 PM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/22/2016 10:59:24 PM - PdfToPptx - INFO - Called pdf_splitter
+02/22/2016 10:59:24 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_1.pdf 
+02/22/2016 10:59:28 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_1.jpg 
+02/22/2016 10:59:28 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_2.pdf 
+02/22/2016 10:59:32 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_2.jpg 
+02/22/2016 10:59:32 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_3.pdf 
+02/22/2016 10:59:35 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_3.jpg 
+02/22/2016 10:59:35 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_4.pdf 
+02/22/2016 10:59:39 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_4.jpg 
+02/22/2016 10:59:39 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_5.pdf 
+02/22/2016 10:59:43 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_5.jpg 
+02/22/2016 10:59:43 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_6.pdf 
+02/22/2016 10:59:47 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_6.jpg 
+02/22/2016 10:59:47 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_7.pdf 
+02/22/2016 10:59:52 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_7.jpg 
+02/22/2016 10:59:52 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_8.pdf 
+02/22/2016 10:59:56 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_8.jpg 
+02/22/2016 10:59:56 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_9.pdf 
+02/22/2016 10:59:59 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_9.jpg 
+02/22/2016 10:59:59 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_10.pdf 
+02/22/2016 11:00:03 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_10.jpg 
+02/22/2016 11:00:03 PM - PdfToPptx - INFO - Called create_ppt
+02/22/2016 11:00:03 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_1.jpg
+02/22/2016 11:00:03 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_2.jpg
+02/22/2016 11:00:03 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_3.jpg
+02/22/2016 11:00:03 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_4.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_5.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_6.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_7.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_8.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_9.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/65d8784bcfe049e1b8b7099904dc5722/a_10.jpg
+02/22/2016 11:00:04 PM - PdfToPptx - INFO - Done ppt conversion
+02/22/2016 11:15:38 PM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/22/2016 11:15:38 PM - Main Handler - INFO - Client IP - 127.0.0.1
+02/22/2016 11:15:38 PM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/e21251ba380f4878b6b8898c91d9af33/a.pdf 
+02/22/2016 11:15:38 PM - Storage - convertor.py  - INFO - Random String is e21251ba380f4878b6b8898c91d9af33 
+02/22/2016 11:15:38 PM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a.pdf  
+ /var/www/html/pdf-to-pptx/data/download/e21251ba380f4878b6b8898c91d9af33/a.pdf 
+
+02/22/2016 11:15:38 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a.pdf 
+ /var/www/html/pdf-to-pptx/data/download/e21251ba380f4878b6b8898c91d9af33/a.pptx
+02/22/2016 11:15:38 PM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/22/2016 11:15:38 PM - PdfToPptx - INFO - Called pdf_splitter
+02/22/2016 11:15:38 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_1.pdf 
+02/22/2016 11:15:45 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_1.jpg 
+02/22/2016 11:15:45 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_2.pdf 
+02/22/2016 11:15:51 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_2.jpg 
+02/22/2016 11:15:51 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_3.pdf 
+02/22/2016 11:15:58 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_3.jpg 
+02/22/2016 11:15:58 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_4.pdf 
+02/22/2016 11:16:05 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_4.jpg 
+02/22/2016 11:16:06 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_5.pdf 
+02/22/2016 11:16:12 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_5.jpg 
+02/22/2016 11:16:12 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_6.pdf 
+02/22/2016 11:16:19 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_6.jpg 
+02/22/2016 11:16:19 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_7.pdf 
+02/22/2016 11:16:26 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_7.jpg 
+02/22/2016 11:16:26 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_8.pdf 
+02/22/2016 11:16:32 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_8.jpg 
+02/22/2016 11:16:32 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_9.pdf 
+02/22/2016 11:16:45 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_9.jpg 
+02/22/2016 11:16:45 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_10.pdf 
+02/22/2016 11:16:59 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_10.jpg 
+02/22/2016 11:16:59 PM - PdfToPptx - INFO - Called create_ppt
+02/22/2016 11:16:59 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_1.jpg
+02/22/2016 11:17:00 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_2.jpg
+02/22/2016 11:17:00 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_3.jpg
+02/22/2016 11:17:00 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_4.jpg
+02/22/2016 11:17:01 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_5.jpg
+02/22/2016 11:17:01 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_6.jpg
+02/22/2016 11:17:01 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_7.jpg
+02/22/2016 11:17:02 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_8.jpg
+02/22/2016 11:17:02 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_9.jpg
+02/22/2016 11:17:02 PM - PdfToPptx - DEBUG - /var/apache_tmp/e21251ba380f4878b6b8898c91d9af33/a_10.jpg
+02/22/2016 11:17:03 PM - PdfToPptx - INFO - Done ppt conversion
+02/22/2016 11:20:03 PM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/22/2016 11:20:03 PM - Main Handler - INFO - Client IP - 127.0.0.1
+02/22/2016 11:20:03 PM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/0be5a96dd4e9435ea22ae6df23950063/a.pdf 
+02/22/2016 11:20:03 PM - Storage - convertor.py  - INFO - Random String is 0be5a96dd4e9435ea22ae6df23950063 
+02/22/2016 11:20:03 PM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a.pdf  
+ /var/www/html/pdf-to-pptx/data/download/0be5a96dd4e9435ea22ae6df23950063/a.pdf 
+
+02/22/2016 11:20:03 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a.pdf 
+ /var/www/html/pdf-to-pptx/data/download/0be5a96dd4e9435ea22ae6df23950063/a.pptx
+02/22/2016 11:20:03 PM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/22/2016 11:20:03 PM - PdfToPptx - INFO - Called pdf_splitter
+02/22/2016 11:20:03 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_1.pdf 
+02/22/2016 11:20:12 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_1.jpg 
+02/22/2016 11:20:12 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_2.pdf 
+02/22/2016 11:20:19 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_2.jpg 
+02/22/2016 11:20:19 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_3.pdf 
+02/22/2016 11:20:27 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_3.jpg 
+02/22/2016 11:20:27 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_4.pdf 
+02/22/2016 11:20:32 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_4.jpg 
+02/22/2016 11:20:32 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_5.pdf 
+02/22/2016 11:20:40 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_5.jpg 
+02/22/2016 11:20:40 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_6.pdf 
+02/22/2016 11:20:46 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_6.jpg 
+02/22/2016 11:20:46 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_7.pdf 
+02/22/2016 11:20:51 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_7.jpg 
+02/22/2016 11:20:51 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_8.pdf 
+02/22/2016 11:20:55 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_8.jpg 
+02/22/2016 11:20:55 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_9.pdf 
+02/22/2016 11:20:59 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_9.jpg 
+02/22/2016 11:20:59 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_10.pdf 
+02/22/2016 11:21:04 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_10.jpg 
+02/22/2016 11:21:04 PM - PdfToPptx - INFO - Called create_ppt
+02/22/2016 11:21:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_1.jpg
+02/22/2016 11:21:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_2.jpg
+02/22/2016 11:21:04 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_3.jpg
+02/22/2016 11:21:05 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_4.jpg
+02/22/2016 11:21:05 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_5.jpg
+02/22/2016 11:21:05 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_6.jpg
+02/22/2016 11:21:05 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_7.jpg
+02/22/2016 11:21:06 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_8.jpg
+02/22/2016 11:21:06 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_9.jpg
+02/22/2016 11:21:06 PM - PdfToPptx - DEBUG - /var/apache_tmp/0be5a96dd4e9435ea22ae6df23950063/a_10.jpg
+02/22/2016 11:21:06 PM - PdfToPptx - INFO - Done ppt conversion
+02/22/2016 11:55:08 PM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/22/2016 11:55:08 PM - Main Handler - INFO - Client IP - 192.168.158.1
+02/22/2016 11:55:08 PM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form.pdf 
+02/22/2016 11:55:08 PM - Storage - convertor.py  - INFO - Random String is c9e0c2f76c3f49a6ad21099c5645a3de 
+02/22/2016 11:55:08 PM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form.pdf  
+ /var/www/html/pdf-to-pptx/data/download/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form.pdf 
+
+02/22/2016 11:55:08 PM - PdfToPptx - DEBUG - /var/apache_tmp/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form.pdf 
+ /var/www/html/pdf-to-pptx/data/download/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form.pptx
+02/22/2016 11:55:08 PM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/22/2016 11:55:08 PM - PdfToPptx - INFO - Called pdf_splitter
+02/22/2016 11:55:08 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form_1.pdf 
+02/22/2016 11:55:12 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form_1.jpg 
+02/22/2016 11:55:12 PM - PdfToPptx - INFO - Called create_ppt
+02/22/2016 11:55:12 PM - PdfToPptx - DEBUG - /var/apache_tmp/c9e0c2f76c3f49a6ad21099c5645a3de/C:\Users\vp2\Desktop\HDFC Cashback-redemption-form_1.jpg
+02/22/2016 11:55:12 PM - PdfToPptx - INFO - Done ppt conversion
+02/22/2016 11:57:03 PM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/22/2016 11:57:03 PM - Main Handler - INFO - Client IP - 192.168.158.1
+02/22/2016 11:57:03 PM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged.pdf 
+02/22/2016 11:57:03 PM - Storage - convertor.py  - INFO - Random String is 09a31acdc21b4658a22b6f0b161793fa 
+02/22/2016 11:57:03 PM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged.pdf  
+ /var/www/html/pdf-to-pptx/data/download/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged.pdf 
+
+02/22/2016 11:57:03 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged.pdf 
+ /var/www/html/pdf-to-pptx/data/download/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged.pptx
+02/22/2016 11:57:03 PM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/22/2016 11:57:03 PM - PdfToPptx - INFO - Called pdf_splitter
+02/22/2016 11:57:03 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_1.pdf 
+02/22/2016 11:57:11 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_1.jpg 
+02/22/2016 11:57:11 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_2.pdf 
+02/22/2016 11:57:16 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_2.jpg 
+02/22/2016 11:57:16 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_3.pdf 
+02/22/2016 11:57:20 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_3.jpg 
+02/22/2016 11:57:20 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_4.pdf 
+02/22/2016 11:57:23 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_4.jpg 
+02/22/2016 11:57:24 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_5.pdf 
+02/22/2016 11:57:27 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_5.jpg 
+02/22/2016 11:57:27 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_6.pdf 
+02/22/2016 11:57:30 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_6.jpg 
+02/22/2016 11:57:30 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_7.pdf 
+02/22/2016 11:57:33 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_7.jpg 
+02/22/2016 11:57:33 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_8.pdf 
+02/22/2016 11:57:37 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_8.jpg 
+02/22/2016 11:57:38 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_9.pdf 
+02/22/2016 11:57:43 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_9.jpg 
+02/22/2016 11:57:43 PM - PdfToPptx - INFO - Checking file - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_10.pdf 
+02/22/2016 11:57:48 PM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_10.jpg 
+02/22/2016 11:57:48 PM - PdfToPptx - INFO - Called create_ppt
+02/22/2016 11:57:48 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_1.jpg
+02/22/2016 11:57:48 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_2.jpg
+02/22/2016 11:57:48 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_3.jpg
+02/22/2016 11:57:48 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_4.jpg
+02/22/2016 11:57:48 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_5.jpg
+02/22/2016 11:57:49 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_6.jpg
+02/22/2016 11:57:49 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_7.jpg
+02/22/2016 11:57:49 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_8.jpg
+02/22/2016 11:57:49 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_9.jpg
+02/22/2016 11:57:49 PM - PdfToPptx - DEBUG - /var/apache_tmp/09a31acdc21b4658a22b6f0b161793fa/C:\Users\vp2\Desktop\merged_10.jpg
+02/22/2016 11:57:49 PM - PdfToPptx - INFO - Done ppt conversion
+02/23/2016 12:04:15 AM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/23/2016 12:04:15 AM - Main Handler - INFO - Client IP - 192.168.158.1
+02/23/2016 12:04:15 AM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/17456ab1be864ced980956ef7ce0be43/merged.pdf 
+02/23/2016 12:04:15 AM - Storage - convertor.py  - INFO - Random String is 17456ab1be864ced980956ef7ce0be43 
+02/23/2016 12:04:15 AM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged.pdf  
+ /var/www/html/pdf-to-pptx/data/download/17456ab1be864ced980956ef7ce0be43/merged.pdf 
+
+02/23/2016 12:04:15 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged.pdf 
+ /var/www/html/pdf-to-pptx/data/download/17456ab1be864ced980956ef7ce0be43/merged.pptx
+02/23/2016 12:04:15 AM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/23/2016 12:04:15 AM - PdfToPptx - INFO - Called pdf_splitter
+02/23/2016 12:04:15 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_1.pdf 
+02/23/2016 12:04:19 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_1.jpg 
+02/23/2016 12:04:19 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_2.pdf 
+02/23/2016 12:04:22 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_2.jpg 
+02/23/2016 12:04:22 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_3.pdf 
+02/23/2016 12:04:29 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_3.jpg 
+02/23/2016 12:04:29 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_4.pdf 
+02/23/2016 12:04:33 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_4.jpg 
+02/23/2016 12:04:33 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_5.pdf 
+02/23/2016 12:04:37 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_5.jpg 
+02/23/2016 12:04:37 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_6.pdf 
+02/23/2016 12:04:40 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_6.jpg 
+02/23/2016 12:04:40 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_7.pdf 
+02/23/2016 12:04:44 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_7.jpg 
+02/23/2016 12:04:44 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_8.pdf 
+02/23/2016 12:04:47 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_8.jpg 
+02/23/2016 12:04:47 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_9.pdf 
+02/23/2016 12:04:50 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_9.jpg 
+02/23/2016 12:04:50 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_10.pdf 
+02/23/2016 12:04:53 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_10.jpg 
+02/23/2016 12:04:53 AM - PdfToPptx - INFO - Called create_ppt
+02/23/2016 12:04:53 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_1.jpg
+02/23/2016 12:04:53 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_2.jpg
+02/23/2016 12:04:53 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_3.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_4.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_5.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_6.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_7.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_8.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_9.jpg
+02/23/2016 12:04:54 AM - PdfToPptx - DEBUG - /var/apache_tmp/17456ab1be864ced980956ef7ce0be43/merged_10.jpg
+02/23/2016 12:04:55 AM - PdfToPptx - INFO - Done ppt conversion
+02/23/2016 12:08:19 AM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/23/2016 12:08:19 AM - Main Handler - INFO - Client IP - 192.168.158.1
+02/23/2016 12:08:19 AM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/5bc62f028efd4e6bab84393ea8526419/vj resume.pdf 
+02/23/2016 12:08:19 AM - Storage - convertor.py  - INFO - Random String is 5bc62f028efd4e6bab84393ea8526419 
+02/23/2016 12:08:19 AM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume.pdf  
+ /var/www/html/pdf-to-pptx/data/download/5bc62f028efd4e6bab84393ea8526419/vj resume.pdf 
+
+02/23/2016 12:08:19 AM - PdfToPptx - DEBUG - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume.pdf 
+ /var/www/html/pdf-to-pptx/data/download/5bc62f028efd4e6bab84393ea8526419/vj resume.pptx
+02/23/2016 12:08:19 AM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/23/2016 12:08:19 AM - PdfToPptx - INFO - Called pdf_splitter
+02/23/2016 12:08:19 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume_1.pdf 
+02/23/2016 12:08:22 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume_1.jpg 
+02/23/2016 12:08:22 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume_2.pdf 
+02/23/2016 12:08:26 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume_2.jpg 
+02/23/2016 12:08:26 AM - PdfToPptx - INFO - Called create_ppt
+02/23/2016 12:08:26 AM - PdfToPptx - DEBUG - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume_1.jpg
+02/23/2016 12:08:26 AM - PdfToPptx - DEBUG - /var/apache_tmp/5bc62f028efd4e6bab84393ea8526419/vj resume_2.jpg
+02/23/2016 12:08:26 AM - PdfToPptx - INFO - Done ppt conversion
+02/23/2016 12:10:37 AM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/23/2016 12:10:37 AM - Main Handler - INFO - Client IP - 192.168.158.1
+02/23/2016 12:10:37 AM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/12cc8fd8c8044a80b9c14984cba6814b/merged.pdf 
+02/23/2016 12:10:37 AM - Storage - convertor.py  - INFO - Random String is 12cc8fd8c8044a80b9c14984cba6814b 
+02/23/2016 12:10:37 AM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged.pdf  
+ /var/www/html/pdf-to-pptx/data/download/12cc8fd8c8044a80b9c14984cba6814b/merged.pdf 
+
+02/23/2016 12:10:37 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged.pdf 
+ /var/www/html/pdf-to-pptx/data/download/12cc8fd8c8044a80b9c14984cba6814b/merged.pptx
+02/23/2016 12:10:37 AM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/23/2016 12:10:37 AM - PdfToPptx - INFO - Called pdf_splitter
+02/23/2016 12:10:37 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_1.pdf 
+02/23/2016 12:10:41 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_1.jpg 
+02/23/2016 12:10:41 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_2.pdf 
+02/23/2016 12:10:45 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_2.jpg 
+02/23/2016 12:10:45 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_3.pdf 
+02/23/2016 12:10:48 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_3.jpg 
+02/23/2016 12:10:48 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_4.pdf 
+02/23/2016 12:10:51 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_4.jpg 
+02/23/2016 12:10:51 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_5.pdf 
+02/23/2016 12:10:54 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_5.jpg 
+02/23/2016 12:10:54 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_6.pdf 
+02/23/2016 12:10:57 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_6.jpg 
+02/23/2016 12:10:58 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_7.pdf 
+02/23/2016 12:11:01 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_7.jpg 
+02/23/2016 12:11:01 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_8.pdf 
+02/23/2016 12:11:04 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_8.jpg 
+02/23/2016 12:11:04 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_9.pdf 
+02/23/2016 12:11:07 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_9.jpg 
+02/23/2016 12:11:07 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_10.pdf 
+02/23/2016 12:11:10 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_10.jpg 
+02/23/2016 12:11:10 AM - PdfToPptx - INFO - Called create_ppt
+02/23/2016 12:11:10 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_1.jpg
+02/23/2016 12:11:10 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_2.jpg
+02/23/2016 12:11:10 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_3.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_4.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_5.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_6.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_7.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_8.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_9.jpg
+02/23/2016 12:11:11 AM - PdfToPptx - DEBUG - /var/apache_tmp/12cc8fd8c8044a80b9c14984cba6814b/merged_10.jpg
+02/23/2016 12:11:12 AM - PdfToPptx - INFO - Done ppt conversion
+02/23/2016 02:39:52 AM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/23/2016 02:39:52 AM - Main Handler - INFO - Client IP - 192.168.158.1
+02/23/2016 02:39:52 AM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/024e24572a9640f781337c705a3a725d/merged.pdf 
+02/23/2016 02:39:52 AM - Storage - convertor.py  - INFO - Random String is 024e24572a9640f781337c705a3a725d 
+02/23/2016 02:39:52 AM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged.pdf  
+ /var/www/html/pdf-to-pptx/data/download/024e24572a9640f781337c705a3a725d/merged.pdf 
+
+02/23/2016 02:39:52 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged.pdf 
+ /var/www/html/pdf-to-pptx/data/download/024e24572a9640f781337c705a3a725d/merged.pptx
+02/23/2016 02:39:52 AM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/23/2016 02:39:52 AM - PdfToPptx - INFO - Called pdf_splitter
+02/23/2016 02:39:52 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_1.pdf 
+02/23/2016 02:39:53 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_1.jpg 
+02/23/2016 02:39:53 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_2.pdf 
+02/23/2016 02:39:54 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_2.jpg 
+02/23/2016 02:39:54 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_3.pdf 
+02/23/2016 02:39:55 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_3.jpg 
+02/23/2016 02:39:55 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_4.pdf 
+02/23/2016 02:39:56 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_4.jpg 
+02/23/2016 02:39:56 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_5.pdf 
+02/23/2016 02:39:57 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_5.jpg 
+02/23/2016 02:39:57 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_6.pdf 
+02/23/2016 02:39:58 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_6.jpg 
+02/23/2016 02:39:58 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_7.pdf 
+02/23/2016 02:39:59 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_7.jpg 
+02/23/2016 02:39:59 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_8.pdf 
+02/23/2016 02:40:00 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_8.jpg 
+02/23/2016 02:40:00 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_9.pdf 
+02/23/2016 02:40:01 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_9.jpg 
+02/23/2016 02:40:01 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_10.pdf 
+02/23/2016 02:40:02 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_10.jpg 
+02/23/2016 02:40:02 AM - PdfToPptx - INFO - Called create_ppt
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_1.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_2.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_3.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_4.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_5.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_6.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_7.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_8.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_9.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - DEBUG - /var/apache_tmp/024e24572a9640f781337c705a3a725d/merged_10.jpg
+02/23/2016 02:40:02 AM - PdfToPptx - INFO - Done ppt conversion
+02/23/2016 02:41:27 AM - Main Handler - INFO - $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+02/23/2016 02:41:27 AM - Main Handler - INFO - Client IP - 192.168.158.1
+02/23/2016 02:41:27 AM - Storage - convertor.py  - INFO - Filename = /var/www/html/pdf-to-pptx/data/upload/44473ffb8c41428ea99493305ead7888/vj resume.pdf 
+02/23/2016 02:41:27 AM - Storage - convertor.py  - INFO - Random String is 44473ffb8c41428ea99493305ead7888 
+02/23/2016 02:41:27 AM - Storage - convertor.py  - DEBUG - Reached here ----<<<<>>>>>>------ 
+ /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume.pdf  
+ /var/www/html/pdf-to-pptx/data/download/44473ffb8c41428ea99493305ead7888/vj resume.pdf 
+
+02/23/2016 02:41:27 AM - PdfToPptx - DEBUG - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume.pdf 
+ /var/www/html/pdf-to-pptx/data/download/44473ffb8c41428ea99493305ead7888/vj resume.pptx
+02/23/2016 02:41:27 AM - PdfToPptx - INFO - Calling the main execution for ppt conversion
+02/23/2016 02:41:27 AM - PdfToPptx - INFO - Called pdf_splitter
+02/23/2016 02:41:27 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume_1.pdf 
+02/23/2016 02:41:28 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume_1.jpg 
+02/23/2016 02:41:28 AM - PdfToPptx - INFO - Checking file - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume_2.pdf 
+02/23/2016 02:41:29 AM - PdfToPptx - INFO - Image convert passed - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume_2.jpg 
+02/23/2016 02:41:29 AM - PdfToPptx - INFO - Called create_ppt
+02/23/2016 02:41:29 AM - PdfToPptx - DEBUG - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume_1.jpg
+02/23/2016 02:41:29 AM - PdfToPptx - DEBUG - /var/apache_tmp/44473ffb8c41428ea99493305ead7888/vj resume_2.jpg
+02/23/2016 02:41:29 AM - PdfToPptx - INFO - Done ppt conversion

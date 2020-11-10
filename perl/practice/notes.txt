@@ -1,0 +1,3 @@
+
+
+Perl stands for "Practical Extraction and Reporting Language" created by Larry Wall.

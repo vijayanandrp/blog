@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlayGround</string>
+    <string name="header">Android Studio Base Project </string>
+    <string name="msg">"It works!" </string>
+</resources>

@@ -1,0 +1,50 @@
+#!/bin/bash 
+
+__perform__()
+{
+	DATA_VAL=$( cat $IPC_CONNECTOR )
+	test -z $DATA_VAL && return 
+	S_DATA_VAL=${DATA_DIR}/${DATA_VAL}_U
+	D_DATA_VAL=${DATA_DIR}/${DATA_VAL}_P
+	test -d $S_DATA_VAL && echo "Dir $S_DATA_VAL Found " || { echo "Dir $S_DATA_VAL Not Found " ;return ;}
+	mkdir  $D_DATA_VAL 2>/dev/null
+	if mv $S_DATA_VAL/* $D_DATA_VAL/ 
+	then
+		echo "Moved Files For $DATA_VAL At $( date %s ) "
+	fi
+	
+}	
+
+
+__main__()
+{
+	mkfifo $IPC_CONNECTOR 2>/dev/null
+
+	for(( counter=1 ; counter <=NUM_PROCS ; counter++ ))
+	do
+		(
+		
+			for((;;))
+			do
+				__perform__
+				usleep 100000
+			done
+		) &
+	done
+
+}
+
+if test -f $( dirname $0 )/config
+then
+
+	source $( dirname $0 )/config
+else
+	echo No Config File At $( dirname $0 )/config 
+	exit 1
+fi
+
+(
+	__main__
+) >> $LOG_FILE 2>&1 
+
+

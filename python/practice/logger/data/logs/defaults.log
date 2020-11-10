@@ -1,0 +1,17 @@
+10/20/2016 07:00:34 AM - __main__ - INFO - This is info module
+10/20/2016 07:00:34 AM - __main__ - DEBUG -  Debug contents here
+10/20/2016 07:00:34 AM - __main__ - WARNING - Warning statements here
+10/20/2016 07:00:34 AM - __main__ - CRITICAL - Critical contents 
+10/20/2016 07:00:34 AM - __main__ - ERROR - ERROROROR
+10/20/2016 07:00:34 AM - __main__ - ERROR - See below example 
+NoneType
+10/20/2016 07:00:34 AM - __main__ - ERROR - Import error
+Traceback (most recent call last):
+  File "/home/vijay-work/PycharmProjects/DataLake_POC/datalake_R_&_D/logger/logger.py", line 61, in <module>
+    import excel
+ImportError: No module named 'excel'
+10/20/2016 07:00:34 AM - __main__ - ERROR - err
+Traceback (most recent call last):
+  File "/home/vijay-work/PycharmProjects/DataLake_POC/datalake_R_&_D/logger/logger.py", line 61, in <module>
+    import excel
+ImportError: No module named 'excel'

@@ -1,0 +1,6 @@
+
+BASE_DIR=$( dirname $0 )
+DATA_DIR=${BASE_DIR}/../data
+IPC_CONNECTOR=${BASE_DIR}/../connectors/ipc.pipe
+NUM_PROCS=10
+LOG_FILE=$BASE_DIR/../logs/log.log

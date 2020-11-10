@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    window.addEventListener('message', function (event) {
+        console.log("Hello from " + event.data);
+
+        // Ignores messages from untrusted domains.
+        //if (event.origin != 'URL') return;
+
+    });
+
+    function CreateIframe() {
+        var iframe = document.createElement('iframe');
+        iframe.setAttribute("src", "http://www.disney.com");
+        iframe.setAttribute("id", "target");
+        iframe.setAttribute("height", "200");
+        iframe.setAttribute("width", "200");
+        document.body.appendChild(iframe);
+
+        // Time out to automatically remove the frame after 20 seconds
+        setTimeout(function () {
+            var frame = document.getElementById("target");
+            if (frame != undefined && frame != null) {
+                frame.parentNode.removeChild(frame);
+            }
+            else {
+                console.log('Iframe not created yet');
+            }
+        }, 20000);
+    }
+    </script>
+
+    <iframe id="destination-frame" src="Child.html" height="500" width="500" allowTransparency="true" scrolling="no" frameborder="0" style="border:none; overflow:hidden;"></iframe>
+    <input type="button" value="click me" onclick="CreateIframe()">
+
+</body>
+</html>
