@@ -16,6 +16,7 @@ Various tools that uses modeling design are UML, Class Diagrams, Entity Relation
 
 ### DDD is model driven approach focuses on mapping the concepts from the model to code and overarching software design.
 
+overarching - arch over something
 
 DDD can be used only in complex and large business domains.
 
@@ -26,6 +27,24 @@ DDD can be used only in complex and large business domains.
 * It is not code focused
 * It does not one-size-fits-all solution
 * Its not a panacea (a solution or remedy for all difficulties and diseases)
+
+# Phase 1 - DDD - Knowledge Crunching, Building Blocks & Contexts
+
+Team of Developers & Team of Domain Experts 
+Refining Knowledge
+Search for meaning
+Knowledge Crunching - Number Crunching 
+(process large amounts of information or perform operations of great complexity, especially by computer.)
+Speicfic Needs
+
+## Best practices of Knowledge Crunching 
+* Ubiquitous Language (use common terms that both understand the same point)
+* Avoid technical implementation of software to domain experts
+* Avoid side conversations
+* Understand the domain experts "Hot Buttons" going on. Example - Sales cares about sales not on billing process. Accounting doesn't care about Advertising or Lead generations.
+* Every domain will be different
+* Understand the differences and the idnetify the common elements of linkage
+
 
 
 
