@@ -48,8 +48,53 @@ Speicfic Needs
 * Understand the domain experts "Hot Buttons" going on. Example - Sales cares about sales not on billing process. Accounting doesn't care about Advertising or Lead generations.
 * Every domain will be different
 * Understand the differences and the idnetify the common elements of linkage
-
 <br />
+
+###  Knowledge Crunching - Developers 
+Basically ask more questions and understands the working points in domain
+* why do you need this?
+* whats missing / wrong?
+* is it really needed? or any work arounds is manageable?
+* Describe your complexity 
+* how will it add the value?
+* is that a common term in your domain?
+* what did you mean by that?
+<br />
+
+###  Knowledge Crunching - Domain Experts (Subject Matter Expert) 
+* Explain your pain
+* Explain everything in the simple language
+* Prepare to be interupted
+* Short, frank answers 
+* Dont be afraid to ask questions
+<br />
+
+## What are the benefits of Domain Driven Design ?
+* Its flexible
+* Provides understanding of customer's value and perspective 
+* code is more organized, centralized and easily tested 
+* Business logic in centralized location
+* collaborations between business experts and technicians can identify the problems that are not seen before
+* it doesn't require major investment in new technologies and applications
+ <br />
+
+## Drawback of DDD
+* cause significant isolation due to modularization
+* costly
+* enhances risk of error
+* requires great deal of work
+* can be used only in complex domains 
+* personalities may hamper the Domain Driven Design process
+ <br />
+
+## Drawback of DDD
+* cause significant isolation due to modularization
+* costly
+* enhances risk of error
+* requires great deal of work
+* can be used only in complex domains 
+* personalities may hamper the Domain Driven Design process
+
 
 
 
