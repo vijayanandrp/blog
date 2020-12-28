@@ -13,13 +13,13 @@ Developer can create a logics and functions but they dont understand the real wo
 <br />
 
 ### Domain Driven Design helps the Developer and Business Experts to work together to solve complex need and requirements of the software application.
-<br />
-
 Various tools that uses modeling design are Unified Model Language(UML), Class Diagrams, Entity Relationship Diagram, etc
+<br />
 
 ### DDD is model driven approach focuses on mapping the concepts from the model to code and overarching software design.
 * overarching - arch over something
 * DDD can be used only in complex and large business domains.
+<br />
 
 #### Disadvantages of Domain Driven Design
 * it doesnot have a framework
