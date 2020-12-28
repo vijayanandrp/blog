@@ -5,9 +5,9 @@ Goal of **DDD** is not to focus on the programming languages. Rather it breaks d
 Business operate in the "real world"
 Traditional Software development - progranmers  need the functionality. 
 
-##### Problem - In developers who are expert in creating softwares not good in other area of business(not a business experts).
-
-###### There is no synergisitc connection between a Guy who creates a software and a Guy who ended up using the software. 
+### Problem - In developers who are expert in creating softwares not good in other area of business(not a business experts).
+<br />
+### There is no synergisitc connection between a Guy who creates a software and a Guy who ended up using the software. 
 Developer can create a logics and functions but they dont understand the real world business problem as expert does.
 
 ##### Domain Driven Design helps the Developer and Business Experts to work together to solve complex need and requirements of the software application.
