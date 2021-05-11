@@ -1,7 +1,8 @@
 cd ~ && cd Documents;
-mkdir install_spark && cd install_spark;
+mkdir install_spark;
+cd install_spark;
 
-sudo apt install default-jdk scala git -y
+sudo apt install default-jdk scala git 
 
 java -version; javac -version; scala -version; git --version
 
@@ -15,19 +16,18 @@ sudo mv spark-3*-bin-hadoop2.7 /opt/spark
 echo "export SPARK_HOME=/opt/spark" >> ~/.profile
 echo "export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.profile
 echo "export PYSPARK_PYTHON=/usr/bin/python3" >> ~/.profile
-
-# nano .profile
-# export SPARK_HOME=/opt/spark
-# export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
-# export PYSPARK_PYTHON=/usr/bin/python3
-
 source ~/.profile
 
-# start-master.sh
-# start-slave.sh -m 512M spark://ubuntu1:7077
+echo "export SPARK_HOME=/opt/spark" >> ~/.bashrc
+echo "export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc
+echo "export PYSPARK_PYTHON=/usr/bin/python3" >> ~/.bashrc
+source ~/.bashrc
+
+start-master.sh
+start-slave.sh -m 512M spark://ubuntu1:7077
 # start-slave.sh -c 1 spark://ubuntu1:7077
 
-start-all.sh
+#start-all.sh
 
 
 
