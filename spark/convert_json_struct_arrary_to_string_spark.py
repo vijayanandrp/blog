@@ -47,21 +47,10 @@ for _col in struct_cols:
             parsed_cols.append(_col)
     elif array_list and string_list:
         if len(array_list) == 1:
-            _df = _df.withColumn(_col+'_tmp', concat_ws('-', *array_list))
+            _df = _df.withColumn(_col+'_tmp', concat_ws(',', *array_list))
             string_list.append(_col+'_tmp')
             _df = _df.withColumn(_col, concat_ws('-', *string_list))
             parsed_cols.append(_col)
 
 
-_df.select(non_struct_cols + parsed_cols).show(10, False)
-
-
-    elif arrary_list and string_list:
-        _df = _df.withColumn(_col, concat_ws('-', *string_list)).withColumn("tmp", arrays_zip(*arrary_list)).withColumn("tmp", explode("tmp")).select([col("tmp."+c).alias(c) for c in arrary_list])
-        parsed_cols.append(_col)
-flat_df = _df.select(flat_cols +
-                           [col(nc + '.' + c).alias(nc + '_' + c)
-                            for nc in nested_cols
-                            for c in _df.select(nc + '.*').columns])
-print("flatten_df_count :", flat_df.count())
-# return flat_df
+_df.select(non_struct_cols + parsed_cols).show(50, False)
