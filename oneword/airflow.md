@@ -1,4 +1,4 @@
-**Airflow** is the best orchestrator to run the multiple workflows
+**Airflow** is the best orchestrator to run the multiple workflows (Compared to Oozie)
 
 Install
 -------
@@ -61,3 +61,21 @@ Webserver parses Folder Dags for every 30s <br>
 Scheduler parses Folder Dags for every 300s / 5min <br>
 
 ![image](https://user-images.githubusercontent.com/3804538/132123177-ee33aab5-1731-4919-8158-3fe9de3064c4.png)
+
+
+How to access DAGs? - UI, CLI, Rest API
+
+COMMANDS
+-------------------
+`docker ps`
+`docker exec -it <CONTAINER_ID> /bin/bash`
+`airflow db init`
+`airflow db upgrade`
+`ariflow db reset`
+`airflow webserver`
+`ariflow scheduler `
+`airflow celery worker`
+`airlfow dags paues|unpause|list`
+`airflow tasks list <DAG_ID>`
+`airflow tasks test <DAG_ID> <OPERATOR_ID> <DATE_STAMP>`
+
