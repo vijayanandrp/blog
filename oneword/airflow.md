@@ -56,3 +56,8 @@ Instance of an Operator
 Represents a sepcific run of a task: DAG + TASK + Point in time
 
 ![image](https://user-images.githubusercontent.com/3804538/132122894-b3a36a30-99e9-485f-b402-a1211aad2a2a.png)
+
+Webserver parses Folder Dags for every 30s <br>
+Scheduler parses Folder Dags for every 300s / 5min <br>
+
+![image](https://user-images.githubusercontent.com/3804538/132123177-ee33aab5-1731-4919-8158-3fe9de3064c4.png)
