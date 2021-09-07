@@ -52,8 +52,4 @@ data = [tuple(t.split(" | ")) for t in text.split("\n")  if t.strip()]
 columns = ["code_type", "code_value", "neg_rate", "nit", "ipn", "id_tn"]
 df = spark.createDataFrame(data=data, schema=columns)
 
-df.groupBy("code_type", "code_value", "neg_rate") \
-  .agg(concat_ws(",", collect_list(concat(coalesce(col("nit"), None), lit(':'), coalesce(col("ipn"), None), lit(':'),
-                                          coalesce(col("id_tn"), None)))).alias("prov_id")) \
-  .withColumn("date_stamp", date_add(last_day(current_date()), 1))\ 
-.select("date_stamp", "prov_id", "code_type", "code_value", "neg_rate").show()
+df.groupBy("code_type", "code_value", "neg_rate").agg(concat_ws(",", collect_list(concat(coalesce(col("nit"), lit(None)), lit(':'), coalesce(col("ipn"), lit(None)), lit(':'), coalesce(col("id_tn"), lit(None))))).alias("prov_id")).withColumn("date_stamp", date_add(last_day(current_date()), 1)).select("date_stamp", "prov_id", "code_type", "code_value", "neg_rate").show(20, False)
