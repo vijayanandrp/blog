@@ -15,8 +15,8 @@ astro dev stop
 Core Components
 ---------------
 1. Web Server
-2. Scheduler
-3. Metadatabase 
+2. Metadatabase
+3. Scheduler  
 4. Executor
 5. Worker
 
@@ -35,8 +35,8 @@ Web Server -----> MetaStore (DB) ----> Scheduler <----TASK OBJECT ---> Executor/
 Multinode
 ![image](https://user-images.githubusercontent.com/3804538/132122513-7d1a33af-31dd-4ae8-be7e-7fa05030b682.png)
 
-Core Concepts
----------------
+Core Concepts [DAGs -> Operators -> Task -> Task Instance]
+------------------------------------------------------------
 #### DAGs - Directed Acyclic Graphs (Operators)
 DAGs is a group of operators in each node.
 1. Nodes and Edges are directed
@@ -50,9 +50,9 @@ Task (T1) in the DAG is called Operator.
 2. Transfer Operators (Src->Dest transfer data)
 3. Sensor Operators (wait for Something to happen before run anything)
 
-##### Task
+#### Task
 Instance of an Operator
-##### Task Instance
+#### Task Instance
 Represents a sepcific run of a task: DAG + TASK + Point in time
 
 ![image](https://user-images.githubusercontent.com/3804538/132122894-b3a36a30-99e9-485f-b402-a1211aad2a2a.png)
@@ -67,15 +67,15 @@ How to access DAGs? - UI, CLI, Rest API
 
 COMMANDS
 -------------------
-`docker ps`
-`docker exec -it <CONTAINER_ID> /bin/bash`
-`airflow db init`
-`airflow db upgrade`
-`ariflow db reset`
-`airflow webserver`
-`ariflow scheduler `
-`airflow celery worker`
-`airlfow dags paues|unpause|list`
-`airflow tasks list <DAG_ID>`
-`airflow tasks test <DAG_ID> <OPERATOR_ID> <DATE_STAMP>`
+`docker ps` <br>
+`docker exec -it <CONTAINER_ID> /bin/bash` <br>
+`airflow db init` <br>
+`airflow db upgrade` <br>
+`ariflow db reset` <br>
+`airflow webserver` <br>
+`ariflow scheduler ` <br>
+`airflow celery worker` <br>
+`airlfow dags paues|unpause|list` <br>
+`airflow tasks list <DAG_ID>` <br>
+`airflow tasks test <DAG_ID> <OPERATOR_ID> <DATE_STAMP>` <br>
 
