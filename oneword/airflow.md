@@ -7,10 +7,10 @@ Astro CLI
 
 Run commnads
 ------------
-astro dev init
-astro dev start
-astro dev ps 
-astro dev stop
+astro dev init <br>
+astro dev start <br>
+astro dev ps  <br>
+astro dev stop <br>
 
 Core Components
 ---------------
@@ -38,6 +38,9 @@ Multinode
 Core Concepts [DAGs -> Operators -> Task -> Task Instance]
 ------------------------------------------------------------
 #### DAGs - Directed Acyclic Graphs (Operators)
+
+An acyclic graph is **a graph without cycles (a cycle is a complete circuit)**. When following the graph from node to node, you will never visit the same node twice. This graph (the thick black line) is acyclic, as it has no cycles (complete circuits). A connected acyclic graph, like the one above, is called a tree.
+
 DAGs is a group of operators in each node.
 1. Nodes and Edges are directed
 2. No loops
@@ -65,9 +68,9 @@ Scheduler parses Folder Dags for every 300s / 5min <br>
 
 How to access DAGs? - UI, CLI, Rest API
 
-COMMANDS
+ORDER OF COMMANDS
 -------------------
-`docker ps` <br>
+`docker ps` <br> 
 `docker exec -it <CONTAINER_ID> /bin/bash` <br>
 `airflow db init` <br>
 `airflow db upgrade` <br>
