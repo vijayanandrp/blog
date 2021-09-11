@@ -2,8 +2,8 @@
 
 Install
 -------
-Docker for ubuntu 
-Astro CLI 
+1. Docker for ubuntu  <br>
+2. Astro CLI <br>
 
 Run commnads
 ------------
@@ -70,15 +70,18 @@ How to access DAGs? - UI, CLI, Rest API
 
 ORDER OF COMMANDS
 -------------------
-`docker ps` <br> 
+`docker ps`  Pick the **container_id** <br>
 `docker exec -it <CONTAINER_ID> /bin/bash` <br>
 `airflow db init` <br>
+`airflow dags list` Pick the **dag_id** <br>
+`airflow tasks list <DAG_ID>` <br>
+`airflow tasks test <DAG_ID> <OPERATOR_ID> <DATE_STAMP>` <br>
+
+`airflow dags backfill -s <START_DATE> -e <END_DATE> --reset_dagruns <DAG_ID>` Run the history <br>
 `airflow db upgrade` <br>
 `ariflow db reset` <br>
 `airflow webserver` <br>
 `ariflow scheduler ` <br>
 `airflow celery worker` <br>
-`airlfow dags paues|unpause|list` <br>
-`airflow tasks list <DAG_ID>` <br>
-`airflow tasks test <DAG_ID> <OPERATOR_ID> <DATE_STAMP>` <br>
+`airlfow dags paues|unpause|list` Turn on or pause or list dags <br>
 
