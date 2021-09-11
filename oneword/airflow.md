@@ -27,7 +27,6 @@ Worker ------> Where? (on which we want to run the job/workflow example - locale
 
 
 **Architecture** 
-
 One node (simple architecture)
 Web Server -----> MetaStore (DB) ----> Scheduler <----TASK OBJECT ---> Executor/Queue <-----pulled by ---- Worker 
 ![image](https://user-images.githubusercontent.com/3804538/132122327-83a52b89-86d5-4da6-8b89-8b63e560bacc.png)
@@ -44,8 +43,8 @@ An acyclic graph is **a graph without cycles (a cycle is a complete circuit)**. 
 DAGs is a group of operators in each node.
 1. Nodes and Edges are directed
 2. No loops
-![image](https://user-images.githubusercontent.com/3804538/132123025-8b3bb6f5-29a1-413d-96a7-1a145a28ae15.png)
 
+![image](https://user-images.githubusercontent.com/3804538/132123025-8b3bb6f5-29a1-413d-96a7-1a145a28ae15.png)
 
 #### Operators (Task)
 Task (T1) in the DAG is called Operator.
@@ -55,18 +54,19 @@ Task (T1) in the DAG is called Operator.
 
 #### Task
 Instance of an Operator
+
 #### Task Instance
 Represents a sepcific run of a task: DAG + TASK + Point in time
 
 ![image](https://user-images.githubusercontent.com/3804538/132122894-b3a36a30-99e9-485f-b402-a1211aad2a2a.png)
 
-Webserver parses Folder Dags for every 30s <br>
-Scheduler parses Folder Dags for every 300s / 5min <br>
+Webserver parses **Folder Dags** for every 30s <br>
+Scheduler parses **Folder Dags** for every 300s / 5min <br>
 
 ![image](https://user-images.githubusercontent.com/3804538/132123177-ee33aab5-1731-4919-8158-3fe9de3064c4.png)
 
 
-How to access DAGs? - UI, CLI, Rest API
+#### How to access DAGs? - UI, CLI, Rest API
 
 ORDER OF COMMANDS
 -------------------
