@@ -26,11 +26,11 @@ Executor -----> How? ( Example - localexecutor, sequentialexecutor, kubernetesex
 Worker ------> Where? (on which we want to run the job/workflow example - localexecutor->local process)
 
 
-**Architecture** 
-One node (simple architecture)
-Web Server -----> MetaStore (DB) ----> Scheduler <----TASK OBJECT ---> Executor/Queue <-----pulled by ---- Worker 
-![image](https://user-images.githubusercontent.com/3804538/132122327-83a52b89-86d5-4da6-8b89-8b63e560bacc.png)
+**Architecture** <br> <br>
+One node (simple architecture) <br>
+Web Server -----> MetaStore (DB) ----> Scheduler <----TASK OBJECT ---> Executor/Queue <-----pulled by ---- Worker <br>
 
+<img src="https://user-images.githubusercontent.com/3804538/132122327-83a52b89-86d5-4da6-8b89-8b63e560bacc.png"  style="height:75%; width:75%" > <br>
 Multinode
 ![image](https://user-images.githubusercontent.com/3804538/132122513-7d1a33af-31dd-4ae8-be7e-7fa05030b682.png)
 
