@@ -14,7 +14,10 @@ pytest -v --cov=calculator
 ```
 
 ```powershell 
+Set-ExecutionPolicy Unrestricted -Scope Process
+
 # Run virtual environment WINDOWS
+cd venv
 Scripts\activate.ps1
 
 # instead of activate.bat which doesn't work in PowerShell any more.
