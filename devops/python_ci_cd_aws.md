@@ -5,12 +5,12 @@ python3 -m venv venv
 # Activate virtual environment (MAC and LINUX)
 . venv/bin/activate
 
-pip install -r requirements.
+pip install -r requirements.txt
 
 pip install flake8 pytest pytest-cov
 
 flake8 --exclude=venv* --statistics
-pytest -v --cov=calculator
+pytest -v --cov=code
 ```
 
 ```powershell 
