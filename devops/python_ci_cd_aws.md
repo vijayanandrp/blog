@@ -108,3 +108,43 @@ repos:
 ```
 
 https://towardsdatascience.com/pre-commit-hooks-you-must-know-ff247f5feb7e
+
+# Local 
+```yaml
+# Apply to all files without commiting:
+#   pre-commit run --all-files --verbose
+# Update this file:
+#   pre-commit autoupdate
+
+repos:
+  - repo: https://github.com/PyCQA/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+        additional_dependencies: [ flake8-typing-imports ]
+        args: [ '--ignore=W605,E501' ]
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v1.5.7
+    hooks:
+      - id: autopep8
+  - repo: local
+    hooks:
+      - id: pytest-cov
+        name: pytest-coverage
+        stages: [ push, commit ]
+        language: system
+        entry: pytest --cov=src tests/ --cov-fail-under=10
+        types: [ python ]
+        pass_filenames: false
+      - id: pytest
+        name: pytest-unittest
+        stages: [ commit ]
+        language: system
+        entry: pytest tests
+        pass_filenames: false
+        always_run: true
+        types: [ python ]
+        
+ ```
+ 
+ 
