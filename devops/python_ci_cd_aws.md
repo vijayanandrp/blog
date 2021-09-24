@@ -111,12 +111,19 @@ https://towardsdatascience.com/pre-commit-hooks-you-must-know-ff247f5feb7e
 
 # Local 
 ```yaml
-# Apply to all files without commiting:
-#   pre-commit run --all-files --verbose
-# Update this file:
-#   pre-commit autoupdate
+## Apply to all files without commiting:
+##   pre-commit run --all-files --verbose
+## Update this file:
+##   pre-commit autoupdate
+
 
 repos:
+  - repo: https://github.com/aws-cloudformation/cfn-python-lint
+    rev: v0.54.2  # The version of cfn-lint to use
+    hooks:
+      - id: cfn-python-lint
+        files: template.yml
+        args: [ '--ignore-checks=W3011,W2001' ]
   - repo: https://github.com/PyCQA/flake8
     rev: 3.9.2
     hooks:
@@ -130,14 +137,14 @@ repos:
   - repo: local
     hooks:
       - id: pytest-cov
-        name: pytest-coverage
+        name: coverage
         stages: [ push, commit ]
         language: system
-        entry: pytest --cov=src tests/ --cov-fail-under=10
+        entry: pytest --cov=functions/src tests/  # --cov-fail-under=10
         types: [ python ]
         pass_filenames: false
       - id: pytest
-        name: pytest-unittest
+        name: pytest
         stages: [ commit ]
         language: system
         entry: pytest tests
