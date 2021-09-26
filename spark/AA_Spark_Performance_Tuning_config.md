@@ -1,5 +1,6 @@
 ```python
 spark.conf.set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+spark.conf.set("spark.sql.files.maxPartitionBytes", 134217728*2) # 256 MB
 spark.conf.set("spark.sql.inMemoryColumnarStorage.compressed", true)
 spark.conf.set("spark.sql.inMemoryColumnarStorage.batchSize",10000)
 spark.conf.set("spark.sql.cbo.enabled", true)
@@ -49,3 +50,4 @@ Note: Use repartition() when you wanted to increase the number of partitions.  <
 1. https://www.syntelli.com/eight-performance-optimization-techniques-using-spark
 2. https://sparkbyexamples.com/spark/spark-sql-performance-tuning-configurations/
 3. https://sparkbyexamples.com/spark/spark-performance-tuning/
+4. https://spark.apache.org/docs/latest/sql-performance-tuning.html
