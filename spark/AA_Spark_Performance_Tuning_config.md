@@ -6,10 +6,36 @@ spark.conf.set("spark.sql.inMemoryColumnarStorage.batchSize",10000)
 spark.conf.set("spark.sql.cbo.enabled", true)
 spark.conf.set("spark.sql.shuffle.partitions",30)
 spark.conf.set("spark.sql.autoBroadcastJoinThreshold",10485760)
+spark.conf.set("spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version", 2)
+spark.conf.set("spark.hadoop.mapreduce.fileoutputcommitter.cleanup-failures.ignored", true)
+spark.conf.set("spark.hadoop.parquet.enable.summary-metadata", false)
+spark.conf.set("spark.sql.parquet.mergeSchema", false)
+spark.conf.set("spark.sql.parquet.filterPushdown", true) // for reading purpose 
+spark.conf.set("mapreduce.fileoutputcommitter.algorithm.version", "2")
+spark.conf.set("spark.sql.parquet.compression.codec", "snappy")
+spark.conf.set("spark.hadoop.fs.s3a.fast.upload","true")
+spark.conf.set("spark.hadoop.fs.s3a.connection.timeout","100000")
+spark.conf.set("spark.hadoop.fs.s3a.attempts.maximum","10")
+spark.conf.set("spark.hadoop.fs.s3a.fast.upload.buffer","bytebuffer")
+spark.conf.set("spark.hadoop.fs.s3a.fast.upload.active.blocks","4")
+spark.conf.set("fs.s3a.connection.ssl.enabled", "true")
+spark.conf.set('fs.s3a.committer.name', 'partitioned')
+spark.conf.set('fs.s3a.committer.staging.conflict-mode', 'replace')
+
+
 # Spark 3.0
 spark.conf.set("spark.sql.adaptive.enabled",true)
 spark.conf.set("spark.sql.adaptive.coalescePartitions.enabled",true)
 spark.conf.set("spark.sql.adaptive.skewJoin.enabled",true)
+
+result_df \
+    .write \
+    .partitionBy('my_column') \
+    .option('fs.s3a.committer.name', 'partitioned') \
+    .option('fs.s3a.committer.staging.conflict-mode', 'replace') \
+    .option("fs.s3a.fast.upload.buffer", "bytebuffer") \ # Buffer in memory instead of disk, potentially faster but more memory intensive
+    .mode('overwrite') \
+    .csv(path='s3a://mybucket/output', sep=',')
 ```
 
 
