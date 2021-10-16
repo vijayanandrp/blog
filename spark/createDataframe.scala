@@ -13,4 +13,3 @@ val df2=sc.parallelize(Seq(
   (2, "IveNew", "Fish", 1990),
   (3, "San", "Simon", 1974)
 )).toDF(columns: _*)
-
