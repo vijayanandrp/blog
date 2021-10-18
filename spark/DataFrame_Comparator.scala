@@ -7,7 +7,7 @@ import org.apache.spark.sql.{Column, DataFrame}
 import org.apache.spark.sql.functions.countDistinct
 import org.apache.spark.sql.types._
 
-def CompareDataframe(left_df: DataFrame, right_df: DataFrame, pk_columns: Seq[String] = null, select_columns: Seq[String]  = null, limit: Int = 100): DataFrame = {
+def CompareDataframe(left_df: DataFrame, right_df: DataFrame, pk_columns: Seq[String] = null, select_columns: Seq[String]  = null, limit: Int = 100, filter_type: String = null): DataFrame = {
 
     // Record types
     val insertRecord = "Right"
@@ -114,9 +114,32 @@ def CompareDataframe(left_df: DataFrame, right_df: DataFrame, pk_columns: Seq[St
 
     diffDF.groupBy(diffcolumnName).count().show(25, false)
     
-  
-    diffDF.orderBy(diffcolumnName).limit(limit)
+    if (filter_type == null){
+       diffDF.orderBy(diffcolumnName).limit(limit)
+    } else diffDF.filter(diffDF(diffcolumnName) ===  filter_type).orderBy(diffcolumnName).limit(limit)
 }
+
+
+
+val columns=Array("id", "first", "last", "year")
+val df1 = spark.sparkContext.parallelize(Seq(
+  (1, "John", "Doe", 1986),
+  (2, "Ive", "Fish", 1990),
+  (4, "John", "Wayne", 1995),
+  (55, "Tom", "Cruise", 1978),
+  (96, "Angelina", "Julie", 1985)
+)).toDF(columns: _*)
+
+val df2 = spark.sparkContext.parallelize(Seq(
+  (1, "John", "Doe", 1986),
+  (2, "IveNew", "Fish", 1990),
+  (3, "San", "Simon", 1974),
+  (55, "Tom", "Cruise", 1978),
+  (96, "Angelina", "Joolie", 1987)
+)).toDF(columns: _*)
+
+val df = CompareDataframe(df1, df2,  Seq("id"), Seq("first", "last", "year"), 100,"Match")
+df.show(25, false)
 
 val columns=Array("id", "first", "last", "year")
 val df1 = spark.sparkContext.parallelize(Seq(
