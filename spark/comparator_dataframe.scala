@@ -1,7 +1,5 @@
 // CREDIT - https://github.com/G-Research/spark-extension/blob/master/src/main/scala/uk/co/gresearch/spark/diff/Diff.scala
 // It identifies Inserted, Changed, Deleted and uN-changed rows.
-// CREDIT - https://github.com/G-Research/spark-extension/blob/master/src/main/scala/uk/co/gresearch/spark/diff/Diff.scala
-// It identifies Inserted, Changed, Deleted and uN-changed rows.
 
 
 
