@@ -122,8 +122,10 @@ repos:
     rev: v0.54.2  # The version of cfn-lint to use
     hooks:
       - id: cfn-python-lint
-        files: template.yml
-        args: [ '--ignore-checks=W3011,W2001' ]
+        name: AWS CloudFormation Linter
+        entry: cfn-lint
+        language: python
+        args: [ '--template', 'template.yml', '--ignore-checks', 'W3011,W2001,W7001' ]
   - repo: https://github.com/PyCQA/flake8
     rev: 3.9.2
     hooks:
