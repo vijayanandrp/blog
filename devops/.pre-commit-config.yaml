@@ -1,0 +1,44 @@
+# Apply to all files without committing:
+# pre-commit run --all-files --verbose
+# Update this file:
+# pre-commit autoupdate
+
+
+repos:
+  - repo: https://github.com/aws-cloudformation/cfn-python-lint
+    rev: v0.56.1  # The version of cfn-lint to use
+    hooks:
+      - id: cfn-python-lint
+        name: AWS CloudFormation Linter
+        entry: cfn-lint
+        language: python
+        args: [ '--template', 'template.yml', '--ignore-checks', 'W3011,W2001,W7001' ]
+  - repo: https://github.com/PyCQA/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+        additional_dependencies: [ flake8-typing-imports ]
+        args: [ '--ignore', 'W605,E501,E402,W503' ]
+  - repo: local
+    hooks:
+      - id: black
+        name: black
+        entry: black
+        language: system
+        types: [ python ]
+        files: ^(functions/|tests/)
+      - id: pytest-cov
+        name: coverage
+        stages: [ push, commit ]
+        language: system
+        entry: pytest --cov=functions/ tests/  # --cov-fail-under=10
+        types: [ python ]
+        pass_filenames: false
+      - id: pytest
+        name: pytest
+        stages: [ commit ]
+        language: system
+        entry: pytest tests
+        pass_filenames: false
+        always_run: true
+        types: [ python ]
