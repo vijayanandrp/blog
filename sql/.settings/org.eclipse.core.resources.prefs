@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//postgres_db_setup/02_postgres_populate_author.sql=UTF-8
+encoding//postgres_db_setup/03_postgres_populate_publisher.sql=UTF-8
+encoding//postgres_db_setup/05_postgres_populate_book.sql=UTF-8
+encoding//postgres_db_setup/08_postgres_populate_address.sql=UTF-8
