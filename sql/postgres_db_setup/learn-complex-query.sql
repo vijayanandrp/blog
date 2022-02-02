@@ -1,6 +1,6 @@
 /*
-Complex SQL Query Example – Daily Order Analysis (Tried in Postgresql)
-===========================================================================
+Complex SQL Query Example – Daily Order Analysis with Postgresql
+===================================================================
  
  Source & Thanks - https://www.databasestar.com/complex-sql-query-example/
   
@@ -220,7 +220,7 @@ order by
     LAG Function won't identify the missing days in past.
 */
 	
-	-- Calendar table 
+-- Calendar table 
 create table calendar_days (
   calendar_date DATE,
   calendar_year INT,
@@ -350,31 +350,38 @@ order by
 	c.calendar_date asc
 	
 -- Optimize 2 remove the sub query
-select
+SELECT
 	c.calendar_date,
 	c.calendar_year,
 	c.calendar_month,
 	c.calendar_dayname,
-	count(distinct co.order_id) as num_orders ,
-	sum(ol.price) as total_price,
-	count(ol.book_id) as num_books,
-	sum(count(ol.book_id)) over (
-		partition by c.calendar_year, c.calendar_month 
-		order by c.calendar_date 
-		) as running_total_num_books,
-	lag(count(ol.book_id), 7) over (
-		order by c.calendar_date
-		) as prev_books
-from calendar_days c
-left join cust_order co on c.calendar_date = co.order_date::date
-inner join order_line ol on co.order_id = ol.order_id 
-group by
+	count(DISTINCT co.order_id) AS num_orders ,
+	sum(ol.price) AS total_price,
+	count(ol.book_id) AS num_books,
+	sum(count(ol.book_id)) OVER (
+		PARTITION BY c.calendar_year,
+	c.calendar_month
+ORDER BY
+	c.calendar_date 
+		) AS running_total_num_books,
+	lag(count(ol.book_id),
+	7) OVER (
+ORDER BY
+	c.calendar_date
+		) AS prev_books
+FROM
+	calendar_days c
+LEFT JOIN cust_order co ON
+	c.calendar_date = co.order_date::date
+INNER JOIN order_line ol ON
+	co.order_id = ol.order_id
+GROUP BY
 	c.calendar_date,
 	c.calendar_year,
 	c.calendar_month,
 	c.calendar_dayname
-order by
-	c.calendar_date asc
+ORDER BY
+	c.calendar_date ASC
 
 	
 -- Optimize 3 inner join to left join

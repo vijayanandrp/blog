@@ -41,6 +41,8 @@ values
 
 select * from customers ;
 
+explain analyze select distinct gender from customers c order by gender 
+
 truncate table orders;
 
 insert into orders ( order_id, order_name, cust_id, order_dt, order_price)
@@ -98,9 +100,7 @@ on o.cust_id = c.cust_id
 -- Extras
 
 select to_char(current_date - interval '1 months', 'YYYY-MM-01'):: date;
-
 select to_char(current_date - interval '6 months', 'YYYY-MM-DD'):: date;
-
 select to_char(current_date - interval '30 days', 'YYYY-MM-DD'):: date;
 
 
