@@ -41,6 +41,8 @@ values
 
 select * from customers ;
 
+select * from customers natural join orders c2 ;
+
 explain analyze select distinct gender from customers c order by gender 
 
 truncate table orders;
@@ -58,6 +60,20 @@ values
 
 select * from orders;
 
+select distinct order_name, order_id  from orders order by order_id desc;
+
+create table salary_gender (
+	gender varchar(5),
+	salary int not null
+);
+
+
+insert into salary_gender values 
+('M', 45000), ('F', 90000), ('M', 50000), ('F', 75000),
+('M', 85000), ('F', 100000), ('M', 45000), ('F', 80000);
+
+
+select gender, salary, cume_dist() over (partition by gender order by salary) from salary_gender;
 /*
 
 Question 1: print only those customer who have at least one order.
@@ -65,6 +81,8 @@ You have to provide the output in following format.
 cust_id, cust_name, [Total amount of orders]
 
 */
+
+select nullif(0, 25)
 
 select c.*, t.total_orders 
 from customers c
