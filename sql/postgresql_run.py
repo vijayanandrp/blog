@@ -20,6 +20,7 @@ season, geo, product, qty
 
 Output:
 season, geo, product, qty, qty_previous_year
+2020SU, asia, shoes, 50, NULL
 2020SU, asia, dresses, 120, NULL
 2021SU, asia, dresses, 190, 120
 2022SU, asia, dresses, 280, 190
