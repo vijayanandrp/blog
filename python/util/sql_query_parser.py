@@ -77,3 +77,20 @@ output_file = file_name.split('.')[0] + '_modified.' + file_name.split('.')[1]
 with open(output_file, 'w') as fp:
     fp.write(sql_text)
     fp.write('\n')
+
+SELECT_QUERY = "SELECT COUNT(1) AS TOTAL, '{SCHEMA}' AS TABLE_NAME FROM {SCHEMA}"
+
+FINAL_UNIQUE_SCHEMA_TABLE = list()
+for _ in UNIQUE_SCHEMA_TABLE:
+    print(_)
+    _ = _.split('.')
+    if _[0].lower().endswith('_eds'):
+        _[0] = "DEV_AM.EDS"
+    if _[0].lower().endswith('_stg'):
+        _[0] = "DEV_AM.STAGE"
+    _ = '.'.join(_)
+    FINAL_UNIQUE_SCHEMA_TABLE.append(_)
+
+print("\nCOUNT QUERY", "\n", '+' * 20)
+final_query = " UNION ALL \n".join([SELECT_QUERY.format(SCHEMA=_) for _ in FINAL_UNIQUE_SCHEMA_TABLE])
+print(final_query)
