@@ -82,7 +82,6 @@ SELECT_QUERY = "SELECT COUNT(1) AS TOTAL, '{SCHEMA}' AS TABLE_NAME FROM {SCHEMA}
 
 FINAL_UNIQUE_SCHEMA_TABLE = list()
 for _ in UNIQUE_SCHEMA_TABLE:
-    print(_)
     _ = _.split('.')
     if _[0].lower().endswith('_eds'):
         _[0] = "DEV_AM.EDS"
