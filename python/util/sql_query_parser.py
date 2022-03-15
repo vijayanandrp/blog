@@ -68,8 +68,9 @@ RENAME = {r"volatile": r"temporary",
           r"(?s)WITH\s*DATA(.*?);": ""
           }
 
+sql_text = sql_text.upper()
 for key, value in RENAME.items():
-    sql_text = re.sub(key.upper(), value.upper(), sql_text.upper(), re.MULTILINE)
+    sql_text = re.sub(key.upper(), value.upper() if len(value) else value, sql_text, re.IGNORECASE | re.MULTILINE)
 
 for schema in UNIQUE_SCHEMA:
     if schema.lower().endswith('_eds'):
