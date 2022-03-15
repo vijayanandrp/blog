@@ -4,6 +4,7 @@ import re
 
 # CONFIG
 DATABASE = "DEV_AM"
+TEMP_SCHEMA = "PUBLIC"
 
 get_cwd = os.path.dirname(__file__)
 
@@ -63,14 +64,14 @@ print("\nSCHEMA TABLE", "\n", '+' * 20)
 for _ in UNIQUE_SCHEMA_TABLE:
     print(_)
 
-RENAME = {r"volatile": r"temporary",
-          r"(?s)COLLECT(.*?);": "",
-          r"(?s)WITH\s*DATA(.*?);": ""
+RENAME = {r"volatile": r"TEMPORARY",
+          r"(?s)COLLECT(.*?);": r" ",
+          r"(?s)WITH\s*DATA(.*?);": r" ",
+          r"VT_.*": f" {DATABASE}.{TEMP_SCHEMA}."
           }
 
-sql_text = sql_text.upper()
 for key, value in RENAME.items():
-    sql_text = re.sub(key.upper(), value.upper() if len(value) else value, sql_text, re.IGNORECASE | re.MULTILINE)
+    sql_text = re.sub(key, value, sql_text, flags=re.IGNORECASE)
 
 for schema in UNIQUE_SCHEMA:
     if schema.lower().endswith('_eds'):
@@ -97,7 +98,7 @@ for _ in UNIQUE_SCHEMA_TABLE:
 
 print("\nCOUNT QUERY", "\n", '+' * 20)
 final_query = " UNION ALL \n".join([SELECT_QUERY.format(SCHEMA=_) for _ in FINAL_UNIQUE_SCHEMA_TABLE])
-final_query += " ORDER BY TOTAL ASC"
+final_query += "\n ORDER BY TOTAL ASC"
 print(final_query)
 
 output_file = file_name.split('.')[0] + '_snowflake_version.' + file_name.split('.')[1]
