@@ -64,8 +64,8 @@ for _ in UNIQUE_SCHEMA_TABLE:
     print(_)
 
 RENAME = {r"volatile": r"temporary",
-          r"COLLECT[\S\s]*;": "",
-          r"WITH\s*DATA[\S\s]*;": ""
+          r"(?s)COLLECT(.*?);": "",
+          r"(?s)WITH\s*DATA(.*?);": ""
           }
 
 for key, value in RENAME.items():
@@ -103,5 +103,5 @@ output_file = file_name.split('.')[0] + '_snowflake_version.' + file_name.split(
 with open(output_file, 'w') as fp:
     fp.write(sql_text)
     fp.write('\n\n')
-    fp.write("\n--COUNT QUERY", "\n", '+' * 20)
+    fp.write("\n--COUNT QUERY")
     fp.write(final_query)
