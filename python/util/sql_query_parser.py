@@ -64,10 +64,15 @@ print("\nSCHEMA TABLE", "\n", '+' * 20)
 for _ in UNIQUE_SCHEMA_TABLE:
     print(_)
 
+
+def replace_temp_schema(m):
+    return f" {DATABASE}.{TEMP_SCHEMA}.{m.group(1)}"
+
+
 RENAME = {r"volatile": r"TEMPORARY",
           r"(?s)COLLECT(.*?);": r" ",
           r"(?s)WITH\s*DATA(.*?);": r" ",
-          r"VT_.*": f" {DATABASE}.{TEMP_SCHEMA}."
+          r"(VT_.*)": replace_temp_schema
           }
 
 for key, value in RENAME.items():
