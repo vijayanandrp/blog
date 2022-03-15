@@ -2,6 +2,9 @@ import os
 import sys
 import re
 
+# CONFIG
+DATABASE = "DEV_AM"
+
 get_cwd = os.path.dirname(__file__)
 
 print(f"Current working directory - {get_cwd}")
@@ -70,11 +73,11 @@ for key, value in RENAME.items():
 
 for schema in UNIQUE_SCHEMA:
     if schema.lower().endswith('_eds'):
-        sql_text = sql_text.replace('${' + schema.upper() + '}', "DEV_AM.EDS")
+        sql_text = sql_text.replace('${' + schema.upper() + '}', f"{DATABASE}.EDS")
     if schema.lower().endswith('_stg'):
-        sql_text = sql_text.replace('${' + schema.upper() + '}', "DEV_AM.STAGE")
+        sql_text = sql_text.replace('${' + schema.upper() + '}', f"{DATABASE}.STAGE")
     if schema.lower().endswith('_etl'):
-        sql_text = sql_text.replace('${' + schema.upper() + '}', "DEV_AM.ETL")
+        sql_text = sql_text.replace('${' + schema.upper() + '}', f"{DATABASE}.ETL")
 
 # print(sql_text)
 SELECT_QUERY = "SELECT COUNT(1) AS TOTAL, '{SCHEMA}' AS TABLE_NAME FROM {SCHEMA}"
@@ -83,20 +86,22 @@ FINAL_UNIQUE_SCHEMA_TABLE = list()
 for _ in UNIQUE_SCHEMA_TABLE:
     _ = _.split('.')
     if _[0].lower().endswith('_eds'):
-        _[0] = "DEV_AM.EDS"
+        _[0] = f"{DATABASE}.EDS"
     if _[0].lower().endswith('_stg'):
-        _[0] = "DEV_AM.STAGE"
+        _[0] = f"{DATABASE}.STAGE"
     if _[0].lower().endswith('_etl'):
-        _[0] = "DEV_AM.ETL"
+        _[0] = f"{DATABASE}.ETL"
     _ = '.'.join(_)
     FINAL_UNIQUE_SCHEMA_TABLE.append(_)
 
 print("\nCOUNT QUERY", "\n", '+' * 20)
 final_query = " UNION ALL \n".join([SELECT_QUERY.format(SCHEMA=_) for _ in FINAL_UNIQUE_SCHEMA_TABLE])
+final_query += " ORDER BY TOTAL ASC"
 print(final_query)
 
 output_file = file_name.split('.')[0] + '_snowflake_version.' + file_name.split('.')[1]
 with open(output_file, 'w') as fp:
     fp.write(sql_text)
     fp.write('\n\n')
+    fp.write("\n--COUNT QUERY", "\n", '+' * 20)
     fp.write(final_query)
