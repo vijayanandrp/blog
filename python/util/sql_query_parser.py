@@ -60,7 +60,10 @@ print("\nSCHEMA TABLE", "\n", '+' * 20)
 for _ in UNIQUE_SCHEMA_TABLE:
     print(_)
 
-RENAME = {r"volatile": r"temporary"}
+RENAME = {r"volatile": r"temporary",
+          r"COLLECT[\S\s]*;": "",
+          r"WITH\s*DATA[\S\s]*;": ""
+          }
 
 for key, value in RENAME.items():
     sql_text = re.sub(key.upper(), value.upper(), sql_text.upper(), re.MULTILINE)
@@ -70,14 +73,10 @@ for schema in UNIQUE_SCHEMA:
         sql_text = sql_text.replace('${' + schema.upper() + '}', "DEV_AM.EDS")
     if schema.lower().endswith('_stg'):
         sql_text = sql_text.replace('${' + schema.upper() + '}', "DEV_AM.STAGE")
+    if schema.lower().endswith('_etl'):
+        sql_text = sql_text.replace('${' + schema.upper() + '}', "DEV_AM.ETL")
 
 # print(sql_text)
-
-output_file = file_name.split('.')[0] + '_modified.' + file_name.split('.')[1]
-with open(output_file, 'w') as fp:
-    fp.write(sql_text)
-    fp.write('\n')
-
 SELECT_QUERY = "SELECT COUNT(1) AS TOTAL, '{SCHEMA}' AS TABLE_NAME FROM {SCHEMA}"
 
 FINAL_UNIQUE_SCHEMA_TABLE = list()
@@ -87,9 +86,17 @@ for _ in UNIQUE_SCHEMA_TABLE:
         _[0] = "DEV_AM.EDS"
     if _[0].lower().endswith('_stg'):
         _[0] = "DEV_AM.STAGE"
+    if _[0].lower().endswith('_etl'):
+        _[0] = "DEV_AM.ETL"
     _ = '.'.join(_)
     FINAL_UNIQUE_SCHEMA_TABLE.append(_)
 
 print("\nCOUNT QUERY", "\n", '+' * 20)
 final_query = " UNION ALL \n".join([SELECT_QUERY.format(SCHEMA=_) for _ in FINAL_UNIQUE_SCHEMA_TABLE])
 print(final_query)
+
+output_file = file_name.split('.')[0] + '_snowflake_version.' + file_name.split('.')[1]
+with open(output_file, 'w') as fp:
+    fp.write(sql_text)
+    fp.write('\n\n')
+    fp.write(final_query)
