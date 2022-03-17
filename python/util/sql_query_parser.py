@@ -70,8 +70,8 @@ def replace_temp_schema(m):
 
 
 RENAME = {r"volatile": r"TEMPORARY",
-          r"(?s)COLLECT(.*?);": r" ",
-          r"(?s)WITH\s*DATA(.*?);": r" ",
+          r"(?s)COLLECT(.*?);": r";",
+          r"(?s)WITH\s*DATA(.*?);": r";",
           r"(VT_.*)": replace_temp_schema
           }
 
