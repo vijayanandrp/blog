@@ -1,4 +1,5 @@
 import logging
+import os
 
 default_log_args = {
     "level": logging.DEBUG if os.environ.get("DEBUG", False) else logging.INFO,
