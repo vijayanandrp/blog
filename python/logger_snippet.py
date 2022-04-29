@@ -9,7 +9,7 @@ default_log_args = {
 
 
 logging.basicConfig(**default_log_args)
-log = logging.getLogger("Retr-Transform-Save-Lambda")
+log = logging.getLogger("Run-Lambda")
 
 log.info()
 
