@@ -49,6 +49,26 @@ if status:
  ## Get Glue or Python Shell Job ID
  
  ```python
+ def get_running_job_id(job_name):
+    session = boto3.session.Session()
+    glue_client = session.client('glue')
+    try:
+        response = glue_client.get_job_runs(JobName=job_name)
+        for res in response['JobRuns']:
+            print("Job Run id is:"+res.get("Id"))
+            print("status is:"+res.get("JobRunState"))
+            if res.get("JobRunState") == "RUNNING":
+                return res.get("Id")
+        else:
+            return None
+    except ClientError as e:
+        raise Exception("boto3 client error in get_status_of_job_all_runs: " + e.__str__())
+    except Exception as e:
+        raise Exception("Unexpected error in get_status_of_job_all_runs: " + e.__str__())
+```
+ 
+ X
+ ```python
  import sys
 from awsglue.utils import getResolvedOptions
 
