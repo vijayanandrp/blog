@@ -15,5 +15,5 @@ docker run -it --rm -p 8888:8888 jupyter/all-spark-notebook
 
 
 ```
-docker run -p 8888:8888 -v /full/path/to/work:/home/jovyan/work  jupyter/all-spark-notebook  
+docker run -p 8888:8888 -v C:\Users\hai\Documents\GitHub\blog:/home/jovyan/work  jupyter/all-spark-notebook  
 ```
