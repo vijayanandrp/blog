@@ -7,7 +7,7 @@ python3 -m venv venv
 
 pip install -r requirements.txt
 
-pip install flake8 pytest pytest-cov
+pip install pre-commit black flake8 pytest pytest-cov
 
 flake8 --exclude=venv* --statistics
 pytest -v --cov=code
