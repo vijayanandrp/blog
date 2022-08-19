@@ -15,6 +15,14 @@ docker run -it --rm -p 8888:8888 jupyter/all-spark-notebook
 ##  IN DOCKER CLI
 ![image](https://user-images.githubusercontent.com/3804538/185597774-323ec718-450a-4d26-b693-23f07ba1a05f.png)
 
+```bash
+
+docker ps
+
+docker exec -it <container_id or name> /bin/bash
+
+```
+
 ## Run in the Docker App (container) 
 
 `chown -R 1000 work/`
