@@ -1,0 +1,63 @@
+import sys
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from pyspark.context import SparkContext
+from awsglue.context import GlueContext
+
+sc = SparkContext()
+glueContext = GlueContext(sc)
+spark = glueContext.spark_session
+
+
+file_key = 'nickTestLarge.csv'
+test_file = 's3://dvtps3-sftp-incoming/' + file_key
+test_file_parq = 's3a://dvtps3-sftp-incoming/' + file_key + '.parquet'
+
+
+# parquet 
+print('[+] Writing Parquet file - Started ')
+df = spark.read.format("csv").load(test_file)
+                
+df.write.parquet(test_file_parq, mode="overwrite")
+print('[+] Writing Parquet file - Done ')
+
+
+import logging
+import zipfile
+from io import BytesIO
+from boto3 import resource
+import gzip
+import io
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+def gzip_file(filekey, sourcebucketname, destinationbucket):
+    try:
+        s3_file = s3_resource.Object(bucket_name=sourcebucketname, key=filekey)
+        buffer = BytesIO(s3_file.get()["Body"].read())
+
+        logger.info(f'current file : {filekey}')
+        final_file_path = filekey + '.gzip'
+
+        with buffer as f_in:
+            gzipped_content = gzip.compress(f_in.read())
+            destinationbucket.upload_fileobj(io.BytesIO(gzipped_content),
+                                                        final_file_path,
+                                                        ExtraArgs={"ContentType": "text/plain"} )
+    except Exception as e:  
+        logger.info(f'Error: Unable to gzip & upload file: {e}')
+        raise Exception(e)
+        
+def compress_func(key, sourcebucketname, destination_bucket):
+    global s3_resource
+    s3_resource = resource('s3')
+    sourcebucketname = sourcebucketname
+    destination_bucket = s3_resource.Bucket(destination_bucket)
+    gzip_file(key, sourcebucketname, destination_bucket)
+
+ 
+compress_func(key=file_key, sourcebucketname = 'dvtps3-sftp-incoming', destination_bucket = 'dvtps3-sftp-incoming')
+
+            
+
