@@ -24,7 +24,7 @@ echo "===>>>>> Step 04 - remove unused files "
 find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf
 find . -path "*/*.pyc"  -delete
 find . -path "*/*.pyo"  -delete
-find . -path "*/*dist-info"  -delete
+find . -path "*/*.dist-info"  -delete
 find . -path "*/__pycache__" -type d -exec rm -r {} ';'
 
 echo "===>>>>> Step 05 - Zip the lambda_layers folder"
