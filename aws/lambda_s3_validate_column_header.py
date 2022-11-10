@@ -22,6 +22,16 @@ def get_logger(name):
     logging.basicConfig(**default_log_args)
     return logging.getLogger(name)
 
+def compare_dict(x, y):
+    print(y)
+    shared_items = {k: x[k] for k in x if k in y and x[k] == y[k]}
+    if len(shared_items) == len(x) == len(y):
+        return True
+    else:
+        return False
+
+
+templates = [{1: 'User name', 2: 'Password', 3: 'Access key ID', 4: 'Secret access key', 5: 'Console login link'}, {1: 'sha1'}]
 
 def lambda_handler(event: dict = None, context: dict = None):
     log = get_logger(f"{file_name}.{lambda_handler.__name__}")
@@ -65,6 +75,11 @@ def lambda_handler(event: dict = None, context: dict = None):
                 headers = [(idx+1, l.strip()) for idx, l in  enumerate(line.split(split_char))]
                 break
         
-        print(dict(headers))
+        x = dict(headers)
+        for y in templates:
+            if compare_dict(x, y):
+                log.info(f'[+] Template Match found - {x}')
+            else:
+                log.info(f'[+] Template Match Failed - {x}')
     log.info('=' * 30 + " Exit " + '=' * 30)
     return
