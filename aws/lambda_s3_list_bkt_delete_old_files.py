@@ -17,7 +17,7 @@ def lambda_handler(event, context):
         return
     
     objects = s3.list_objects(Bucket=bucket)
-    
+#     objects = s3.list_objects_v2(Bucket=source_bucket, Prefix=source_key)
     print(today + timedelta(days=-2))
     for o in objects["Contents"]:
         if o["LastModified"] <= today  + timedelta(days=-1):
