@@ -59,6 +59,75 @@ This works:
 re.sub(r'(foo)', r'\g<1>123', 'foobar')
 Relevant excerpt from the docs:
 
-In addition to character escapes and backreferences as described above, \g will use the substring matched by the group named name, as defined by the (?P...) syntax. \g uses the corresponding group number; \g<2> is therefore equivalent to \2, but isn’t ambiguous in a replacement such as \g<2>0. \20 would be interpreted as a reference to group 20, not a reference to group 2 followed by the literal character '0'. The backreference \g<0> substitutes in the entire substring matched by the RE.
+# In addition to character escapes and backreferences as described above, \g will use the substring matched by the group named name, as defined by the (?P...) syntax. \g uses the corresponding group number; \g<2> is therefore equivalent to \2, but isn’t ambiguous in a replacement such as \g<2>0. \20 would be interpreted as a reference to group 20, not a reference to group 2 followed by the literal character '0'. The backreference \g<0> substitutes in the entire substring matched by the RE.
+
+
+>>> re.sub(r"\b\w",lambda m: m[0].upper(),"i am your")
+'I Am Your'
+
+
+>>> def my_replace(match):
+...     match = match.group()
+...     return match + str(match.index('e'))
+...
+>>> string = "The quick @red fox jumps over the @lame brown dog."
+>>> re.sub(r'@\w+', my_replace, string)
+'The quick @red2 fox jumps over the @lame4 brown dog.'
+
+
+
+
+I wasn't aware you could pass a function to a re.sub() either. Riffing on @Janne Karila's answer to solve a problem I had, the approach works for multiple capture groups, too.
+
+import re
+
+def my_replace(match):
+    match1 = match.group(1)
+    match2 = match.group(2)
+    match2 = match2.replace('@', '')
+    return u"{0:0.{1}f}".format(float(match1), int(match2))
+
+string = 'The first number is 14.2@1, and the second number is 50.6@4.'
+result = re.sub(r'([0-9]+.[0-9]+)(@[0-9]+)', my_replace, string)
+
+print(result)
+
+
+>>> import re
+>>> pat = r'@\w+'
+>>> reduce(lambda s, m: s.replace(m, m + str(m.index('e'))), re.findall(pat, string), string)
+'The quick @red2 fox jumps over the @lame4 brown dog.'
+
+
+
+
+
+A solution without lambda
+
+import re
+
+def convert_func(matchobj):
+    m =  matchobj.group(0)
+    map = {'7': 'seven',
+           '8': 'eight',
+           '9': 'nine'}
+    return map[m]
+
+line = "7 ate 9"
+new_line =  re.sub("[7-9]", convert_func, line)
+
+
+import re
+
+number_mapping = {'1': 'one',
+                  '2': 'two',
+                  '3': 'three'}
+s = "1 testing 2 3"
+
+print re.sub(r'\d', lambda x: number_mapping[x.group()], s)
+
+
+
+```
 
 ```
