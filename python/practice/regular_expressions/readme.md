@@ -127,6 +127,14 @@ s = "1 testing 2 3"
 print re.sub(r'\d', lambda x: number_mapping[x.group()], s)
 
 
+text ="""
+ DFFFFf                                                | XYYZZZ                    | AVRO   
+ XXX__TEST                                                          | XXXX  | AVRO   
+"""
+
+import re
+for x in re.findall(r'[|](.*)[|$]', text):
+    print('--->', x)
 
 ```
 
