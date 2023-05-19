@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-21.0.3_998b5c37dda01d201e3e1ba7d5e0e1421db1491d.jar" />
+    </item>
+    <item
+        jar="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\libs\httpmime-4.3.6.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="66a39a5e37d5da40fdad6176fc24ef4316e74702">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\httpmime-4.3.6_c62a45af4bffdf51cfbcddf9ad2a7a6b4b1f585f.jar" />
+    </item>
+    <item
+        jar="C:\Users\vp2\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3_fd15452bccf6b8fd1a086f9843c12adc838928fc.jar" />
+    </item>
+    <item
+        jar="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\jars\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3_141be83bb1632981fea214064280c62d1b2fdcb9.jar" />
+    </item>
+    <item
+        jar="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\libs\httpcore-4.3.3.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="f91b7a4aadc5cf486df6e4634748d7dd7a73f06d">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\httpcore-4.3.3_8cb3d2dc54a265755ee0dcc9a66b11ba8d505f48.jar" />
+    </item>
+    <item
+        jar="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\libs\httpclient-4.3.6.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="f3cf3b25e14d3bca47773e95aa85ea8fefbf8e81">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_42a3b99bfc0c40a2a31626b8c232bb36e497a46a.jar" />
+    </item>
+    <item
+        jar="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\vp2\Documents\WORK\android\sampleproj\CameraPhotoVideoUpload\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-21.0.3_53202f3dd11227ae9e3b7097c2a146064ba619f5.jar" />
+    </item>
+
+</items>
