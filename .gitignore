@@ -5,3 +5,4 @@
 *.class
 *.log
 *.ipynb
+.DS_Store
