@@ -207,7 +207,7 @@ class Offer:
     def __init__(self, name: str) -> None:
         self.name = name
 
-    def apply(self, count: int, product_price: float):
+    def apply(self, count: int, product_price: float, cart: Cart):
         raise NotImplementedError()
 
 
@@ -380,7 +380,6 @@ def test() -> None:
     print(cart)
     checkout_manager.checkout(cart=cart)
     print("=======" * 10)
-    print(inventory.items)
 
 
 if __name__ == "__main__":
