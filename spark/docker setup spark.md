@@ -33,7 +33,7 @@ docker exec -it <container_id or name> /bin/bash
 
 docker run -p 8888:8888 -v C:\Users\hai\Documents\GitHub\blog:/home/jovyan/work  jupyter/all-spark-notebook  
 
-docker run -p 8888:8888 -v C:\Users\vpandian\VijayAnandRP\GitHub\blog:/home/jovyan/work  jupyter/all-spark-notebook  
+docker run -p 8888:8888 -v C:\Users\vijay\GitHub\blog:/home/jovyan/work  jupyter/all-spark-notebook  
 
 ```
 
